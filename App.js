@@ -47,7 +47,7 @@ const App = () => {
         data={
           coin.filter((e) =>
             e.name.toLowerCase().includes(input.toLowerCase())
-          ) ||
+          ) &&
           coin.filter((e) =>
             e.symbol.toLowerCase().includes(input.toLowerCase())
           )
