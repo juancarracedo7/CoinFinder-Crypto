@@ -46,9 +46,9 @@ const App = () => {
         style={styles.flatList} //el Flatlsit actua como un map el flatlist, le agrego mi array en data y despues recorro
         data={
           coin.filter((e) =>
-            e.name.toLowerCase().includes(input.toLowerCase())
+            e.name.toLowerCase().includes(input.toLowerCase()) //que lo encuentre por nombre
             ||  
-            e.symbol.toLowerCase().includes(input.toLowerCase()))
+            e.symbol.toLowerCase().includes(input.toLowerCase())) // que lo encuentre por simbolo
         }
         renderItem={({ item }) => {
           return <Coin item={item} />; //envio el item a coin
